@@ -1,0 +1,127 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.nav-bar {
+  background: #0d0d0d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-bar .logo {
+  font-size: 24px;
+  color: #ff69b4;
+  font-weight: 700;
+}
+
+.nav-bar nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: color 0.3s;
+}
+
+.nav-bar nav a:hover {
+  color: #ff69b4;
+}
+
+.hero {
+  padding: 100px 50px;
+  text-align: center;
+  background: linear-gradient(145deg, #0a0a0a 0%, #111111 100%);
+  box-shadow: inset 0 0 80px rgba(255, 105, 180, 0.1);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero .highlight {
+  color: #ff69b4;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  color: #ff69b4;
+  margin-top: 10px;
+}
+
+.intro {
+  margin-top: 20px;
+  font-size: 1em;
+  color: #bbbbbb;
+}
+
+section {
+  padding: 60px 50px;
+}
+
+.about-section,
+.skills-section,
+.projects-section,
+.contact-section {
+  background-color: #111111;
+  margin: 20px 0;
+  border-left: 5px solid #ff69b4;
+  padding-left: 30px;
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.1);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills-grid span {
+  background: #1a1a1a;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+  border: 1px solid #ff69b4;
+  transition: background 0.3s;
+}
+
+.skills-grid span:hover {
+  background: #ff69b4;
+  color: #000;
+}
+
+.project {
+  background: #1c1c1c;
+  padding: 20px;
+  border-left: 3px solid #ff69b4;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.1);
+}
+
+.project img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d0d0d;
+  color: #666;
+  font-size: 0.9em;
+}
